@@ -11,7 +11,7 @@ body{
                 position: relative;
                 min-height: 100vh;
 }
-    .container {
+.container {
             	display: grid;
             	height: 100vh;
             	grid-template-columns: 1fr;
@@ -23,7 +23,7 @@ body{
 		            "footer";
 	            text-transform: tittlecase;
                 font-family: 'Coming Soon', cursive;	
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 600;
 	            color: rgb(0, 0, 0);
 	            text-align: center;        
@@ -35,6 +35,8 @@ nav {
                 height:fit-content;
                 border-top-left-radius: var(--main-radius);
                 border-top-right-radius: var(--main-radius);
+                padding-left: 20px;
+                padding-right: 20px;
 }
 nav2 {
     grid-area: nav;
@@ -44,11 +46,14 @@ header {
                 background: rgb(107, 172, 23);
             	grid-area: header;
                 padding-top: var(--main-padding);
-                padding-bottom:  var(--main-padding);
-}
+                padding-bottom:  var(--main-padding);            
+                border-bottom-left-radius: var(--main-radius);
+                border-bottom-right-radius: var(--main-radius);
+            }
 main {
-                background: rgb(172, 206, 34);
-            	grid-area: main;
+                /* background: rgb(172, 206, 34); */
+            	
+                grid-area: main;
                 height: 400px;
                 overflow-y: auto;
                 border-bottom-left-radius: var(--main-radius);
@@ -57,13 +62,13 @@ main {
                 padding-bottom:  var(--main-padding);
 }
     .cards {
-                background: rgb(172, 206, 34);
+                /* background: rgb(172, 206, 34); */
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-gap: 10px;
     }
     .card {
-                background: rgb(172, 206, 34);
+                background: rgba(172, 206, 34, 0);
                 display: grid;
                 grid-template-rows: auto 1fr auto;
                 margin-left: 1rem;
@@ -101,7 +106,7 @@ h4{
 }
 li {
                 font-family: 'Grand Hotel', cursive;
-                font-size:x-large;
+                font-size:large;
                 font-weight: 400;
 }
 @media only screen and (max-width: 1240px) {
